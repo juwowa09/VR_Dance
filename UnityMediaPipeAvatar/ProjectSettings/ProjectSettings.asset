@@ -143,6 +143,11 @@ PlayerSettings:
   bundleVersion: 0.1
   preloadedAssets:
   - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  - {fileID: 7779746726758435160, guid: 93b4d7d4ceb1f4c798d18a688faf18fd, type: 2}
+  - {fileID: 11400000, guid: eb6c80c11780e4761ac8b6700f891c96, type: 2}
+  - {fileID: 11400000, guid: cf5adf7161b2c4dc5be1e633d77dc7c6, type: 2}
+  - {fileID: 11400000, guid: 005fc1a9ecdd744cc8f20abdeec9c0fa, type: 2}
+  - {fileID: -1529772205374588791, guid: c2c60db763a8945fca0725d9db175bd2, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -863,11 +868,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: 7738fba7-ee50-4944-80f8-e6321ee44ed0
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: UnityMediaPipeAvatar
+  organizationId: juwonung
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

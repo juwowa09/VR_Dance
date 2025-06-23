@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8a183ade463c4bcbabaa56d924b8978, type: 3}
-  m_Name: Whatislove
+  m_Name: WhatIsLove
   m_EditorClassIdentifier: 
   songTitle: What Is Love?
   artist: Twice

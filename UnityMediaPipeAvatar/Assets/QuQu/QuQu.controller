@@ -87,7 +87,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -7716478394224100923}
-    m_Position: {x: 40, y: 240, z: 0}
+    m_Position: {x: 30, y: 260, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1573193245941075924}
     m_Position: {x: 360, y: 510, z: 0}
@@ -123,7 +123,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Naruto
+  m_Name: haidilao
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -150,7 +150,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WhatIsLove
+  m_Name: what is love?
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -199,7 +199,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BangBangBang
+  m_Name: bangbangbang
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -339,7 +339,7 @@ AnimatorStateTransition:
   m_Conditions: []
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1573193245941075924}
-  m_Solo: 1
+  m_Solo: 0
   m_Mute: 1
   m_IsExit: 0
   serializedVersion: 3
@@ -386,7 +386,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Supershy
+  m_Name: super shy
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -413,7 +413,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Whiplash
+  m_Name: whiplash
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -462,7 +462,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LikeJennie2
+  m_Name: likejennie
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:

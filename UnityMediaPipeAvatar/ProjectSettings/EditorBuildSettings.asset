@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CalibrationScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/TirgamesAssets/PBRStageEquipment/Scenes/PBRStageEquipmentDemo.unity
+    guid: f84571bf102f58b4189d844932b47c17
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: cf5adf7161b2c4dc5be1e633d77dc7c6, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 2af24f5582d7c48caad3cc5d29aa6b48, type: 2}

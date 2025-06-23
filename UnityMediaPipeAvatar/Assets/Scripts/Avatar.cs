@@ -10,7 +10,7 @@ public class Avatar : MonoBehaviour
     public bool footTracking = true;
     public float footGroundOffset = .1f;
     [Header("Calibration")]
-    public bool useCalibrationData = false;
+    public bool useCalibrationData = true;
     public PersistentCalibrationData calibrationData;
 
     public bool Calibrated { get; private set; }
@@ -31,6 +31,7 @@ public class Avatar : MonoBehaviour
 
         if (calibrationData && useCalibrationData)
         {
+            Debug.Log("go1");
             CalibrateFromPersistent();
         }
 
@@ -174,7 +175,7 @@ public class Avatar : MonoBehaviour
         {
             Quaternion deltaRotTracked = Quaternion.FromToRotation(i.Value.initialDir, i.Value.CurrentDirection);
             // i.Value.parent.rotation = deltaRotTracked * i.Value.initialRotation;
-            i.Value.Tick(deltaRotTracked * i.Value.initialRotation, 10f);
+            i.Value.Tick(deltaRotTracked * i.Value.initialRotation, 30f);
         }
 
         // Deal with spine chain as a special case.
@@ -184,15 +185,15 @@ public class Avatar : MonoBehaviour
             // Some are partial rotations which we can stack together to specify how much we should rotate.
             Quaternion headr = Quaternion.FromToRotation(head.initialDir, hd);
             Quaternion twist = Quaternion.FromToRotation(hipsTwist.initialDir, 
-                Vector3.Lerp(hipsTwist.initialDir,hipsTwist.CurrentDirection,.25f));
+                Vector3.Lerp(hipsTwist.initialDir,hipsTwist.CurrentDirection,.50f));
             Quaternion updown = Quaternion.FromToRotation(spineUpDown.initialDir,
-                Vector3.Lerp(spineUpDown.initialDir, spineUpDown.CurrentDirection, .25f));
+                Vector3.Lerp(spineUpDown.initialDir, spineUpDown.CurrentDirection, .50f));
 
             // Compute the final rotations.
             Quaternion h = updown * updown * updown * twist * twist;
             Quaternion s = h * twist * updown;
             Quaternion c = s * twist * twist;
-            float speed = 20f;
+            float speed = 30f;
             hipsTwist.Tick(h * hipsTwist.initialRotation, speed);
             spineUpDown.Tick(s * spineUpDown.initialRotation, speed);
             chest.Tick(c * chest.initialRotation, speed);
